@@ -1,17 +1,16 @@
-# 1. THE NUCLEAR OPTION FOR dSYM
-# This ignores any folder ending in .dSYM and everything inside it
+# 1. The "dSYM" Rules (The ones that worked for you)
 **/*.dSYM/
 **/*.dSYM/**
-*.dSYM/
 
-# 2. THE VS CODE & MAC JUNK
+# 2. The Specific "VS Code" & "Mac" Rules
+# We use the double-star to make sure it hits every subfolder
 **/.vscode/
-.vscode/
 **/.DS_Store
+.vscode/
 .DS_Store
 
-# 3. THE MAC BINARY TRICK
-# (Ignores your compiled C++ programs with no extension)
+# 3. The Mac Binary Trick (Keep this at the VERY bottom)
+# This ignores compiled C++ programs with no extension
 *
 !*.*
 !*/
