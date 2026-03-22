@@ -40,12 +40,16 @@
 # debug information files
 *.dwo
 
-# Ignore these in EVERY folder and subfolder
-**/.DS_Store
-**/.vscode/
+# 1. Ignore dSYM folders and EVERYTHING inside them (Contents, etc.)
 **/*.dSYM/
 
-# Ignore Mac binaries (no extension)
+# 2. Ignore the VS Code settings folder in every subfolder
+**/.vscode/
+
+# 3. Ignore the Mac system files
+**/.DS_Store
+
+# 4. The Mac Binary Trick (Ignore extensionless executables)
 *
 !*.*
 !*/
