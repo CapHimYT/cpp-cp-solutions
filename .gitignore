@@ -40,18 +40,12 @@
 # debug information files
 *.dwo
 
-# --- The Universal Mac/VS Code Bouncer ---
-
-# 1. Ignore the Mac "Window Settings" file in EVERY folder
+# Ignore these in EVERY folder and subfolder
 **/.DS_Store
-
-# 2. Ignore the VS Code settings folder in EVERY folder
 **/.vscode/
-
-# 3. Ignore the Mac Debug symbol folders in EVERY folder
 **/*.dSYM/
 
-# 4. The Mac Binary Trick (Ignores executables with NO extension)
+# Ignore Mac binaries (no extension)
 *
 !*.*
 !*/
