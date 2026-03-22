@@ -39,3 +39,17 @@
 
 # debug information files
 *.dwo
+
+# Ignore .vscode folders everywhere
+**/.vscode/
+
+# Ignore .DS_Store files everywhere
+**/.DS_Store
+
+# Ignore Mac debug folders everywhere
+**/*.dSYM/
+
+# The "No Extension" rule for Mac binaries (Safe for subfolders)
+*
+!*.*
+!*/
