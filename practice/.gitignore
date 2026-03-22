@@ -1,24 +1,17 @@
-# Ignore hidden Mac files everywhere
+# 1. THE NUCLEAR OPTION FOR dSYM
+# This ignores any folder ending in .dSYM and everything inside it
+**/*.dSYM/
+**/*.dSYM/**
+*.dSYM/
+
+# 2. THE VS CODE & MAC JUNK
+**/.vscode/
+.vscode/
 **/.DS_Store
 .DS_Store
 
-# Ignore VS Code settings everywhere
-**/.vscode/
-.vscode/
-
-# Ignore Mac Debug folders everywhere
-**/*.dSYM/
-
-# The Mac Binary Trick (Ignores extensionless executables)
-*
-!*.*
-!*/
-# --- Universal Mac/VS Code Bouncer ---
-**/.DS_Store
-**/.vscode/
-**/*.dSYM/
-
-# Mac Binary Trick (Ignore extensionless executables)
+# 3. THE MAC BINARY TRICK
+# (Ignores your compiled C++ programs with no extension)
 *
 !*.*
 !*/
