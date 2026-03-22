@@ -1,6 +1,15 @@
+# Ignore hidden Mac files everywhere
+**/.DS_Store
 .DS_Store
+
+# Ignore VS Code settings everywhere
+**/.vscode/
 .vscode/
-*.dSYM/
+
+# Ignore Mac Debug folders everywhere
+**/*.dSYM/
+
+# The Mac Binary Trick (Ignores extensionless executables)
 *
 !*.*
-!*/	
+!*/
