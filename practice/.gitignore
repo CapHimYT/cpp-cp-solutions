@@ -13,3 +13,12 @@
 *
 !*.*
 !*/
+# --- Universal Mac/VS Code Bouncer ---
+**/.DS_Store
+**/.vscode/
+**/*.dSYM/
+
+# Mac Binary Trick (Ignore extensionless executables)
+*
+!*.*
+!*/
